@@ -21,6 +21,9 @@ I used to use LVM for all my VMs too ... so upvm can use `virt-builder` to gener
 ## Install
 
 #### yum/dnf (RPM) install in RHEL 7.2+ or Fedora 22+:
+
+*Note: these instructions are most likely outdated and install an older, Python-2 version of upvm*
+
 ```
 command -v dnf && dnf=dnf || dnf=yum
 sudo $dnf install http://people.redhat.com/rsawhill/rpms/latest-rsawaroha-release.rpm
@@ -31,20 +34,20 @@ upvm -h
 
 #### Non-rpm install:
 1. Install libguestfs-tools (`virt-builder` command)
-1. Make sure you have the `virsh` and `virt-install` commands as well
-1. `git clone https://github.com/ryran/upvm.git`
-1. `cd upvm`
-1. `sudo ./initial-setup`
-1. `./upvm.py -h`
+2. Make sure you have the `virsh` and `virt-install` commands as well
+3. `git clone https://github.com/godlike64/upvm.git`
+4. `cd upvm`
+5. `sudo ./initial-setup`
+6. `./upvm.py -h`
 
 #### Optional extras:
 Regardless of install method, you will be missing 2 *HIGHLY-recommended* but *optional* python modules. One provides bash-tab-completion and the other provides config-file support. `upvm` will print warnings about this to stderr but if you want to get them now:
 
 1. If RHEL7, ensure access to [EPEL](https://fedoraproject.org/wiki/EPEL)
-1. `sudo $dnf install pip`
-1. `sudo pip install argcomplete`
-1. `sudo activate-global-python-argcomplete`
-1. `sudo pip install configargparse`
+2. `sudo $dnf install pip`
+3. `sudo pip install argcomplete`
+4. `sudo activate-global-python-argcomplete`
+5. `sudo pip install configargparse`
 
 ## I have some VMs ...
 Are you annoyed with always having to open the `virt-manager` GUI to do stuff with you VMs?
