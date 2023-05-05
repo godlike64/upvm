@@ -269,6 +269,6 @@ ABOUT CONFIG FILES:
   override config file values which override defaults.
 
 VERSION:
-  upvm v0.10.6 last mod 2016/02/16
-  See <http://github.com/ryran/upvm> to report bugs or RFEs
+  upvm v0.18 last mod Jun 17, 2021
+  See <http://github.com/godlike64/upvm> to report bugs or RFEs
 ```
